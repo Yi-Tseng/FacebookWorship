@@ -1,0 +1,22 @@
+{
+  "name": "Worship",
+  "version": "1.0.0",
+  "manifest_version": 2,
+
+  "description": "自己打\"<(_ _)>\"會不會很麻煩呢？讓Facebook Worship 來幫你吧！",
+  "icons": {"16":"images/16.png",
+            "48":"images/48.png",
+            "128":"images/128.png"},
+  
+
+  "page_action": {
+    "default_icon": "images/128.png"
+    },
+  
+  "content_scripts":[
+    {
+        "matches": ["https://www.facebook.com/*", "https://facebook.com/*"],
+        "js": ["js/worship.js"]
+    }
+  ]
+}
